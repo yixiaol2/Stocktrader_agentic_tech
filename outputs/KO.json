@@ -1,0 +1,51 @@
+{
+  "ticker": "KO",
+  "run_date": "2026-04-05",
+  "market_data_summary": {
+    "current_price": 76.72,
+    "price_30d_ago": 79.29,
+    "pct_change_30d": -3.24,
+    "avg_daily_volume": 17074206,
+    "volatility_30d": 0.009,
+    "moving_avg_20d": 76.24,
+    "moving_avg_50d": 76.71,
+    "high_52w": 81.44,
+    "low_52w": 64.19,
+    "distance_from_52w_high_pct": -5.8,
+    "rsi_14d": 50.09,
+    "max_drawdown_90d_pct": -7.82
+  },
+  "strategy_a": {
+    "name": "Momentum Trader",
+    "decision": "SELL",
+    "confidence": 8,
+    "justification": "The 20-day moving average is currently at $76.24, which is below the 50-day moving average of $76.71, indicating a bearish trend. Additionally, the stock has a 30-day price change of -3.24%, suggesting downward momentum. Although the volume trend is increasing, the overall price movement has been negative with 14 out of the last 30 days showing negative returns, and the average daily return is also negative at -0.1098%. Given these factors, I recommend selling KO."
+  },
+  "strategy_b": {
+    "name": "Value Contrarian",
+    "decision": "HOLD",
+    "confidence": 6,
+    "justification": "The stock KO is currently priced at $76.72, which is only 5.8% below its 52-week high of $81.44, indicating it is near its peak and may be overvalued. The RSI is at 50.09, suggesting a neutral position, and the 30-day price change of -3.24% is relatively modest. Furthermore, the max drawdown of -7.82% shows some recent weakness, but not enough to suggest a strong buying opportunity. Given these indicators, I recommend holding the stock for now."
+  },
+  "evaluator": {
+    "agents_agree": false,
+    "analysis": "The Momentum Trader recommends selling KO due to bearish signals from the moving averages and a negative price trend, interpreting the recent price decline as a continuation of downward momentum. Conversely, the Value Contrarian suggests holding the stock, viewing its proximity to the 52-week high as a sign of potential overvaluation but not enough to warrant an immediate sell-off. This divergence stems from their differing philosophies; the Momentum Trader focuses on recent price trends and technical indicators, while the Value Contrarian emphasizes valuation relative to historical price levels and overall market conditions. Thus, while the Momentum Trader sees the current price action as a trigger for selling, the Value Contrarian remains cautious, preferring to wait for a clearer signal before acting."
+  },
+  "debate": {
+    "strategy_a_revised": {
+      "name": "Momentum Trader",
+      "decision": "SELL",
+      "confidence": 8,
+      "justification": "I maintain my SELL position as the bearish indicators outweigh the opposing argument. The 20-day moving average at $76.24 being below the 50-day moving average at $76.71 confirms a bearish trend, contrary to the suggestion that it is near its peak. While the RSI at 50.09 indicates a neutral position, the negative 30-day price change of -3.24% and 14 out of 30 days showing negative returns highlight the downward momentum. The argument that the stock is only 5.8% below its 52-week high does not mitigate the strong bearish signals present in the data."
+    },
+    "strategy_b_revised": {
+      "name": "Value Contrarian",
+      "decision": "HOLD",
+      "confidence": 6,
+      "justification": "I maintain my HOLD recommendation for KO. While the opposing agent highlights the bearish trend indicated by the 20-day moving average being below the 50-day moving average, I note that the stock is still only 5.8% below its 52-week high, which indicates it may not yet be oversold enough to warrant a buy. The RSI at 50.09 reflects a neutral position, and the max drawdown of -7.82% does not suggest a significant buying opportunity. Additionally, the modest 30-day price change of -3.24% does not provide enough evidence of a sharp decline to trigger a buy signal according to my value contrarian philosophy."
+    },
+    "a_position_changed": false,
+    "b_position_changed": false,
+    "post_debate_agree": false
+  }
+}

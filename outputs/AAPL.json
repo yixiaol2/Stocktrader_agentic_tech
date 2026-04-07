@@ -1,0 +1,51 @@
+{
+  "ticker": "AAPL",
+  "run_date": "2026-04-05",
+  "market_data_summary": {
+    "current_price": 255.92,
+    "price_30d_ago": 264.58,
+    "pct_change_30d": -3.27,
+    "avg_daily_volume": 41206790,
+    "volatility_30d": 0.013,
+    "moving_avg_20d": 253.41,
+    "moving_avg_50d": 260.3,
+    "high_52w": 288.35,
+    "low_52w": 168.48,
+    "distance_from_52w_high_pct": -11.25,
+    "rsi_14d": 57.46,
+    "max_drawdown_90d_pct": -13.8
+  },
+  "strategy_a": {
+    "name": "Momentum Trader",
+    "decision": "SELL",
+    "confidence": 8,
+    "justification": "AAPL's 30-day price change of -3.27% indicates bearish momentum, as the stock is currently below its 20-day moving average of $253.41, which is also below the 50-day moving average of $260.30, confirming a bearish trend. Despite the increasing volume trend, this doesn't compensate for the negative price performance and the average daily return of -0.1065%. Additionally, with 15 positive days versus 14 negative days, the consistency of direction is weak, reinforcing the decision to sell."
+  },
+  "strategy_b": {
+    "name": "Value Contrarian",
+    "decision": "HOLD",
+    "confidence": 6,
+    "justification": "AAPL is currently trading at $255.92, which is 11.25% below its 52-week high of $288.35, indicating it is not significantly oversold. The RSI is at 57.46, suggesting it is within neutral territory, and the recent 30-day price change of -3.27% does not signal a strong buying opportunity. Additionally, the stock is in a bearish trend with the 20-day moving average below the 50-day moving average. Therefore, while there are no immediate sell signals, the lack of strong buying indicators leads to a cautious HOLD recommendation."
+  },
+  "evaluator": {
+    "agents_agree": false,
+    "analysis": "The Momentum Trader's decision to sell is driven by the recent bearish trend indicated by the negative 30-day price change and the stock's position below both the 20-day and 50-day moving averages, suggesting a continuation of downward momentum. In contrast, the Value Contrarian opts to hold, interpreting the same data as a lack of strong oversold conditions and viewing the stock's current price as not significantly deviated from its historical high. This divergence stems from the Momentum Trader's focus on short-term price movements and trends, while the Value Contrarian emphasizes the stock's relative valuation and potential for recovery, leading to differing conclusions on immediate action."
+  },
+  "debate": {
+    "strategy_a_revised": {
+      "name": "Momentum Trader",
+      "decision": "SELL",
+      "confidence": 8,
+      "justification": "I am reaffirming my decision to sell, as AAPL's 30-day price change of -3.27% and the bearish signal of the 20-day moving average being below the 50-day moving average strongly indicate negative momentum. While the opposing agent mentions that the stock is not significantly oversold and has a neutral RSI, these factors do not outweigh the fact that the stock is currently experiencing a downward trend and has a weak consistency with only one more positive day than negative. The increasing volume trend does not compensate for the overall negative price performance and average daily return of -0.1065%. Therefore, I maintain a cautious stance in exiting this position."
+    },
+    "strategy_b_revised": {
+      "name": "Value Contrarian",
+      "decision": "HOLD",
+      "confidence": 7,
+      "justification": "I maintain my HOLD position as AAPL is not significantly oversold, being only 11.25% below its 52-week high, which does not trigger a strong buying signal. While the opposing agent highlights the bearish momentum and negative price performance, the RSI at 57.46 indicates that the stock is still in neutral territory, rather than overbought. The recent 30-day price change of -3.27% is modest and does not warrant a sell decision, especially given the lack of deep oversold conditions. Therefore, I see no compelling reason to change my stance, but I increase my confidence slightly due to the valid points raised regarding the bearish trend."
+    },
+    "a_position_changed": false,
+    "b_position_changed": false,
+    "post_debate_agree": false
+  }
+}

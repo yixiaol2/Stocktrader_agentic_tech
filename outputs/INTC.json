@@ -1,0 +1,34 @@
+{
+  "ticker": "INTC",
+  "run_date": "2026-04-05",
+  "market_data_summary": {
+    "current_price": 50.38,
+    "price_30d_ago": 44.11,
+    "pct_change_30d": 14.21,
+    "avg_daily_volume": 86759003,
+    "volatility_30d": 0.0432,
+    "moving_avg_20d": 45.29,
+    "moving_avg_50d": 46.16,
+    "high_52w": 54.6,
+    "low_52w": 17.67,
+    "distance_from_52w_high_pct": -7.73,
+    "rsi_14d": 62.11,
+    "max_drawdown_90d_pct": -24.17
+  },
+  "strategy_a": {
+    "name": "Momentum Trader",
+    "decision": "SELL",
+    "confidence": 7,
+    "justification": "The 20-day moving average is currently below the 50-day moving average, indicating a bearish trend. Although the stock has a positive 30-day price change of 14.21% and an increasing volume trend, the overall moving average situation suggests weakness. Additionally, the average daily return of 0.5488% with 12 negative days out of 30 indicates inconsistency, which further supports a bearish outlook. Given these factors, it would be prudent to sell to avoid potential losses."
+  },
+  "strategy_b": {
+    "name": "Value Contrarian",
+    "decision": "SELL",
+    "confidence": 7,
+    "justification": "The current price of $50.38 is only 7.73% below the 52-week high of $54.6, indicating potential overvaluation. The RSI of 62.11 suggests that the stock is nearing overbought territory. Additionally, the recent 30-day price change of 14.21% raises caution as sharp increases often signal inflated prices. While the stock has shown positive momentum with more positive days, the bearish signal from the 20-day MA being below the 50-day MA adds to the concern of a potential price correction."
+  },
+  "evaluator": {
+    "agents_agree": true,
+    "analysis": "Both the Momentum Trader and the Value Contrarian have concluded to SELL due to a convergence of bearish indicators despite the recent price increase. The Momentum Trader is concerned about the bearish trend indicated by the 20-day moving average being below the 50-day moving average, while the Value Contrarian highlights the stock's proximity to its 52-week high and overbought conditions as reasons for potential overvaluation. Additionally, the inconsistent daily returns and the risk of a price correction further solidify their mutual decision, demonstrating that both strategies can align when market conditions signal caution."
+  }
+}
